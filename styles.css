@@ -1,0 +1,148 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./public/img/table.jpg");
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.play {
+  background-color: black; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Keep the button inline */
+  font-size: 16px; /* Increase font size */
+  margin: 4px 2px; /* Some space around */
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 12px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.play:hover {
+  background-color: grey;
+}
+
+.game {
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+.filler {
+  height: 10vh;
+}
+
+.dealer,
+.player {
+  height: 30vh;
+}
+
+.hand,
+.decisions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.decisions {
+  height: 20vh;
+}
+
+.counter {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;   
+}
+
+.card {
+  height: 80%;
+}
+
+.hand img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  margin: 5px;
+}
+
+.decision {
+  background-color: black; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  height: 50%;
+  width: 20vw;
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: none; /* Keep the button inline */
+  font-size: 1.5rem; /* Increase font size */
+  margin: 4px 2px; /* Some space around */
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 12px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.decision:hover {
+  background-color: grey;
+}
+
+.decision:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.outcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  text-align: center;
+  line-height: 100px; /* Aligns text vertically */
+  font-size: 2rem;
+  border: 2px solid #333;
+  display: none;
+}
+
+.balance {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px; /* Optional spacing from the edges */
+  color: white;
+}
+
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* Adjust for the width and height to truly center */
+  transform: translate(-50%, -50%);
+  color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  white-space: nowrap
+}
